@@ -12,8 +12,8 @@ def input_to_index(letsgo)
   letsgo.to_i - 1
 end
 
-def valid_move?(board, letsgo)
-  if letsgo.between?(0,8) && position_taken?(board, letsgo)
+def valid_move?(board, index)
+  if index.between?(0,8) && position_taken?(board, index)
     true
   else
     false
