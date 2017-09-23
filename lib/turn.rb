@@ -13,14 +13,10 @@ def input_to_index(letsgo)
 end
 
 def valid_move?(board, letsgo)
-  if letsgo.between?(0,8)
-    if position_taken?(board, letsgo) == false
-      return true
-    else
-      return false
-    end
+  if letsgo.between?(0,8) && position_taken?(board, letsgo)
+    true
   else
-    return false
+    false
   end
 end
 
